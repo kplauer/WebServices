@@ -1,0 +1,15 @@
+/*BearError.jpg - http://media.backpacker.com/wp-content/uploads/2014/12/BP0315BIG_BearOnPhone_000036617146_750x400.jpg*/
+/*background image*/
+html {
+    background: url("img/BearError.jpg") no-repeat center fixed;
+    background-color: #FFFFFF;
+    background-size: cover;
+}
+h1 { 
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+}
+h2{
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+}

@@ -1,0 +1,59 @@
+/*Bear1.jpg taken by Kim Eijdenberg*/
+/*background image*/
+html {
+    background: url("img/Bear1.jpg") no-repeat center fixed;
+    background-color: #FFFFFF;
+    background-size: cover;
+}
+/*Welcome to Beartooth*/
+h1 { 
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+}
+/*Background overtop picture to allow list and table*/
+.content-wrapper {
+    width: 75%;
+    height: 1500px;
+    margin: 0 auto;
+    background: white;
+    opacity:0.86; 
+    padding: 50px 50px 50px 50px;
+}
+/*Come Join Us*/
+h2{
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 0px;
+}
+/*styling for list*/
+div.list {
+    float:left;
+}
+ul {
+    list-style-type: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    margin:0;
+    padding-bottom:20px;
+    padding-top: 0px;
+    padding-left: 50px;
+}
+li{
+    display:inline-table;
+    padding:50px;
+}
+/*styling for table*/
+thead {
+    background-color: black;
+    color: white;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+table {
+    font-size: 20px
+}
+/*styling for servlet/form*/
+div.servlet {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 600;
+}

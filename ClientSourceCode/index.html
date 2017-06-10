@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Kim Lauer
+605.481 Principles of Enterprise Web Development
+Due: August 12, 2016
+-->
+<html>
+    <head>
+        <title> Beartooth Hiking </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src='js/beartooth.js'></script>
+    </head>
+    <body>
+        <h1> Welcome to Beartooth Hiking </h1>
+<!-- servlet -->
+        <div id="servlet" class="servlet">
+        <br /> 
+        <h2>Sign up for your hiking trip here!</h2><br> 
+<!-- form -->
+        <form action="clientservlet" method="get" autocomplete="off">
+<!-- select which hike with radio buttons, Gardiner Lake is default-->
+          <input type="radio" name="hike" value="Gardiner" checked> Gardiner Lake (3 or 5 days) <br />
+          <input type="radio" name="hike" value="Hellroaring"> Hellroaring Plateau (2, 3 or 4 days) <br />
+          <input type="radio" name="hike" value="Beaten"> The Beaten Path (5 or 7 days) <br /><br />
+<!-- user entry of length of hike, number of characters that can be entered limited to 2. Servlet confirms number -->        
+          Enter Number of Days for Hike: 
+          <input type="TEXT" name="duration" size="5" maxlength="2" required><br /><br />
+          <!-- user enter number of people going on hike, limit entry to 1 to 10.  html code limits entry from 1-10 -->
+          Enter Number of People (1-10):
+          <input type="number" name="people" min="1" max="10" required><br /><br />
+<!-- user entered date to begin hike via Javascript datepicker.  Read only text box -->
+          Enter Date for Hike:
+          <input type="TEXT" id="datepicker" name="date" readonly="readonly" required />
+          <br />
+          <br />
+          <input type="SUBMIT">
+        <div />
+      </form>
+</body>
+</html>
